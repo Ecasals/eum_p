@@ -187,6 +187,9 @@ document.getElementById("RP_face").onclick = function () {
     if (document.getElementById("RP_face").className === "RP_face_up") {
         document.getElementById("arthur_g").className = "arthur_anm_end";
         document.getElementById("background").className = "off_back_insta";
+        $(document).ready(function () {
+            $("#text_joe_9").remove();
+        });
     }
 };
 
@@ -222,7 +225,6 @@ document.getElementById("text_rp_12").onclick = function () {
         document.getElementById("RP_start").className = "RP_set_e7_tiger";
         document.getElementById("RP_start").style.backgroundImage = "url(media/IMG/charecter/rp_set_e7_tiger.png)";
         $(document).ready(function () {
-            $("#text_joe_9").remove();
             $("#text_rp_11").remove();
         });
     }
